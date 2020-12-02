@@ -17,6 +17,12 @@ client.once('ready', () => {
     console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${client.guilds.cache.size} guilds`));
 });
 
+client.on('ready', () => {
+    client.user.setActivity('Flame Development', { type: 'WATCHING' })
+        .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
+        .catch(console.error);
+});
+
 
 client.commands = new Discord.Collection();
 

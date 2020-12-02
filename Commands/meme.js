@@ -44,7 +44,7 @@ module.exports = {
 
                     message.channel.send(textembed)
                 }
-                console.log(image);
+                
                 const imageembed = new Discord.MessageEmbed()
                     .setTitle(subRedditName)
                     .setImage(image)
