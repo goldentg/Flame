@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const chalk = require('chalk');
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
 const moment = require('moment');
@@ -81,3 +82,6 @@ client.on('message', message => {
 
 
 });
+
+
+client.login(token);
