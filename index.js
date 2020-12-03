@@ -7,6 +7,12 @@ const moment = require('moment');
 const fs = require('fs');
 const fetch = require('node-fetch');
 
+const activities_list = [
+    "Flame Development", 
+    "-help for help",
+    "https://github.com/goldentg/Flame"
+    ]; 
+
 const {
     token,
     prefix
@@ -18,19 +24,8 @@ const {
 client.once('ready', () => {
     console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${client.guilds.cache.size} guilds`));
 });
-/*
-client.on('ready', () => {
-    client.user.setActivity('Flame Development', { type: 'WATCHING' })
-        .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-        .catch(console.error);
-});
-*/
 
-const activities_list = [
-    "Flame Development", 
-    "-help for help",
-    "https://github.com/goldentg/Flame"
-    ]; // creates an arraylist containing phrases you want your bot to switch through.
+
 
 client.on('ready', () => {
     setInterval(() => {
