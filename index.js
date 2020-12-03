@@ -26,6 +26,15 @@ client.once('ready', () => {
 });
 
 
+client.on("guildCreate", guild => {
+    console.log("Joined a new guild: " + guild.name);
+    console.log(`Flame is now in ${client.guilds.cache.size} servers`);
+})
+
+client.on("guildDelete", guild => {
+    console.log("Left a guild: " + guild.name);
+    console.log(`Flame is now in ${client.guilds.cache.size} servers`);
+})
 
 client.on('ready', () => {
     setInterval(() => {
