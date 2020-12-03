@@ -12,9 +12,11 @@ const {
     prefix
 } = require('./config.json');
 
+let totalGuilds = client.guilds.cache.size;
+
 
 client.once('ready', () => {
-    console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${client.guilds.cache.size} guilds`));
+    console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${totalGuilds} guilds`));
 });
 /*
 client.on('ready', () => {
