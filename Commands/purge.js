@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
 	name: 'purge',
-	description: 'Clear up to 499 messages.',
+	description: 'Clear up to 499 messages. USER REQUIRES "MANAGE_MESSAGES" PERMISSION',
 	guildOnly: true,
 	execute(message, args) {
 

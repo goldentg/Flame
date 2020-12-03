@@ -5,7 +5,8 @@ const querystring = require('querystring');
 
 module.exports = {
     name: 'urban',
-    definition: 'search urban dictionary'
+    definition: 'search urban dictionary',
+    usage: '-urban <word>'
 },
 
 module.exports.execute = async (message, args) => {

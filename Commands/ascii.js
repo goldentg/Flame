@@ -5,7 +5,7 @@ const figlet = require('figlet');
 module.exports = {
     name: "ascii",
     description: 'turns text to ascii',
-    cooldown: 60,
+    cooldown: 20,
     execute (message, args) {
 
         let ascimes = args.join(' ');

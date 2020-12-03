@@ -4,6 +4,7 @@ module.exports = {
     name: "poll",
     description: "creates a poll",
     guildOnly: true,
+    cooldown: 20,
     execute(message, args) {
         
         //const pollrole = guildMember.roles.cache.get(pollroles);

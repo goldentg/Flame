@@ -3,6 +3,8 @@ const Discord = require('discord.js');
 module.exports = {
     name: 'userinfo',
     description: 'displays all info about a user',
+    usage: '-userinfo <@user>',
+    cooldown: 5,
     execute(message, args) {
        
             let user = message.mentions.users.first();
