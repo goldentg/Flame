@@ -11,6 +11,7 @@ const activities_list = [
     "Flame Development", 
     "-help for help",
     "https://github.com/goldentg/Flame",
+    "Flame Development"
     ]; 
 
 const {
