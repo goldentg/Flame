@@ -12,11 +12,11 @@ const {
     prefix
 } = require('./config.json');
 
-let totalGuilds = client.guilds.cache.size;
+
 
 
 client.once('ready', () => {
-    console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${totalGuilds} guilds`));
+    console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${client.guilds.cache.size} guilds`));
 });
 /*
 client.on('ready', () => {
@@ -29,8 +29,7 @@ client.on('ready', () => {
 const activities_list = [
     "Flame Development", 
     "-help for help",
-    "https://github.com/goldentg/Flame", 
-    `Currently in ${client.guilds.cache.size} guilds`
+    "https://github.com/goldentg/Flame"
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
