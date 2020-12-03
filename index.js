@@ -25,17 +25,19 @@ client.once('ready', () => {
     console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${client.guilds.cache.size} guilds`));
 });
 
-
+//log stats when bot is added to new server
 client.on("guildCreate", guild => {
     console.log("Joined a new guild: " + guild.name);
     console.log(`Flame is now in ${client.guilds.cache.size} servers`);
 })
 
+//log stats when bot is removed from a server
 client.on("guildDelete", guild => {
     console.log("Left a guild: " + guild.name);
     console.log(`Flame is now in ${client.guilds.cache.size} servers`);
 })
 
+//set bot presence 
 client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
@@ -43,6 +45,7 @@ client.on('ready', () => {
     }, 10000); // Runs this every 10 seconds.
 });
 
+//command handler framework
 client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./Commands').filter(file => file.endsWith('.js'));
