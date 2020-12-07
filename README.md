@@ -1,7 +1,5 @@
 # Flame
 
-[![star this repo](https://githubbadges.com/star.svg?user=goldentg&repo=Flame&style=default)](https://github.com/goldentg/Flame)
-[![fork this repo](https://githubbadges.com/fork.svg?user=goldentg&repo=Flame&style=default)](https://github.com/goldentg/Flame/fork)
 [![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=8&scope=bot)
 
 ## THIS BOT IS CURRENTLY IN ALPHA
