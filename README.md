@@ -1,4 +1,4 @@
-# Flame
+<img src=".github/Flame.png" width="300" alt="Flame">
 
 [![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
 
