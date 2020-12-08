@@ -48,7 +48,7 @@ To do so you can either run the `run.bat` file, or run `node .` in a CMD.
 
 
 ### - DISCORD - 
-If you wish to join my community yo can do so by clicking below
+If you wish to join my community yo can do so here
 [Golden Codex HUB](https://discord.gg/GZ3xSkd)
 
 
