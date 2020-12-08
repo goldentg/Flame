@@ -1,7 +1,4 @@
-const eightball = require('8ball')()
 const Discord = require('discord.js');
-
-
 
 module.exports = {
     name: '8ball',
