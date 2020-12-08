@@ -1,5 +1,6 @@
+<p align="center">
 <img src=".github/Flame.png" width="300" alt="Flame">
-
+</p>
 
 <p align="center">
     <a href="https://github.com/goldentg/Flame"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg"></a>
