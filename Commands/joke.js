@@ -5,6 +5,6 @@ module.exports = {
     description: 'Sends a joke',
     execute(message) {
         var getRandomJoke = oneLinerJoke.getRandomJoke();
-        message.channel.send({ embed: { title: "Joke", color: 0x008000, description: `${getRandomJoke.body}`}});
+        message.channel.send({ embed: { title: "Joke", color: 9384170, description: `${getRandomJoke.body}`}});
     }
 }
