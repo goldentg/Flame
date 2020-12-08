@@ -1,11 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const chalk = require('chalk');
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
+
+const chalk = require('chalk');
 const moment = require('moment');
 const fs = require('fs');
 const fetch = require('node-fetch');
+
+const {
+    token,
+    prefix
+} = require('./config.json');
 
 const activities_list = [
     "Flame Development", 
@@ -14,10 +20,6 @@ const activities_list = [
     "Flame Development"
     ]; 
 
-const {
-    token,
-    prefix
-} = require('./config.json');
 
 
 client.once('ready', () => {

@@ -2,6 +2,7 @@ module.exports = {
     name: 'hug',
     decription: 'Give a hug to a user',
     usage: '-hug <@user>',
+    guildOnly: true,
     cooldown: 15,
     execute(message, args) {
         let target = message.mentions.users.first();
