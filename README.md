@@ -1,6 +1,6 @@
 # Flame
 
-[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=8&scope=bot)
+[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
 
 ## THIS BOT IS CURRENTLY IN ALPHA
 
@@ -11,7 +11,7 @@
 </p>
 
 ### ADD FLAME TO YOUR SERVER USING THIS LINK: 
-https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=8&scope=bot
+https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot
 
 
 
