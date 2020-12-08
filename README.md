@@ -3,7 +3,7 @@
 [![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
 
 <p align="center">
-    <a href="https://github.com/feross/standard"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg"></a>
+    <a href="https://github.com/goldentg/Flame"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg"></a>
   <br>
 </p>
 
