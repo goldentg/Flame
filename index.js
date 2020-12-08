@@ -3,6 +3,9 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
 
+const Keyv = require('keyv');
+const keyv = new Keyv();
+
 const chalk = require('chalk');
 const moment = require('moment');
 const fs = require('fs');
@@ -57,8 +60,9 @@ for (const file of commandFiles) {
 }
 
 client.on('message', message => {
+    
     if (!message.content.startsWith(prefix) || message.author.bot) return;
-
+    
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
 
@@ -112,5 +116,6 @@ client.on('message', message => {
 
 });
 
+keyv.on('error', err => console.error('Keyv connection error:', err));
 
 client.login(token);
