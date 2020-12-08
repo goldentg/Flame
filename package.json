@@ -9,6 +9,7 @@
   "author": "BlackLung#6950",
   "license": "ISC",
   "dependencies": {
+    "8ball": "^1.0.6",
     "@discordjs/opus": "^0.3.3",
     "@keyv/mongo": "^1.1.0",
     "@keyv/mysql": "^1.1.4",
