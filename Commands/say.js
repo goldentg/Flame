@@ -1,6 +1,6 @@
 module.exports = {
     name: 'say',
-    desription: 'requires administrative permissions',
+    desription: 'requires manage messages perms',
     guildOnly: true,
     execute(message, args) {
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('You do not have the permissions to do this');
