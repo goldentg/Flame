@@ -1,11 +1,12 @@
 <img src=".github/Flame.png" width="300" alt="Flame">
 
-[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
 
 <p align="center">
     <a href="https://github.com/goldentg/Flame"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg"></a>
   <br>
 </p>
+
+[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
 
 ### ADD FLAME TO YOUR SERVER USING THIS LINK: 
 https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot
