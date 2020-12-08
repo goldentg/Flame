@@ -9,13 +9,13 @@
 
 [![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
 
-### ADD FLAME TO YOUR SERVER USING THIS LINK: 
+### Add Flame To Your Server Using This Link: 
 https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot
 
 ### - Notes -
 This bot is still in early development and frequent updates will be rolling out often. Check back in often to see what is new. Suggerstions for future implementations are appreciated and can be left in the discussions tab.
 
-### - DISSCUSION - 
+### - Discussions - 
 I have enabled discussions on this repo. You can communicate with me or other users there. If you wish to leave a suggestion for a future update you can also do so in the "suggestions" discussion. You can visit the discussion tab by clicking it at the top of the site, or by [clicking here](https://github.com/goldentg/Flame/discussions).
 
 
@@ -47,7 +47,7 @@ To do so you can either run the `run.bat` file, or run `node .` in a CMD.
 
 
 
-### - DISCORD - 
+### - Discord - 
 If you wish to join my community yo can do so here
 [Golden Codex HUB](https://discord.gg/GZ3xSkd)
 
