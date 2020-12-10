@@ -11,6 +11,9 @@ const moment = require('moment');
 const fs = require('fs');
 const fetch = require('node-fetch');
 
+var dt = new Date();
+var utcDate = dt.toUTCString();
+
 const {
     token,
     prefix
@@ -26,6 +29,8 @@ const activities_list = [
 
 
 client.once('ready', () => {
+
+console.log(utcDate);
     const promises = [
         client.shard.fetchClientValues('guilds.cache.size'),
         client.shard.broadcastEval('this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)'),
@@ -42,13 +47,13 @@ client.once('ready', () => {
 
 //log stats when bot is added to new server
 client.on("guildCreate", guild => {
-    console.log(chalk.green('Joined a new guild: ' + guild.name));
+    console.log(chalk.green(`${utcDate}\nJoined a new guild: ` + guild.name));
     console.log(chalk.green(`Flame is now in ${client.guilds.cache.size} servers`));
 })
 
 //log stats when bot is removed from a server
 client.on("guildDelete", guild => {
-    console.log("Left a guild: " + guild.name);
+    console.log(`${utcDate}\nLeft a guild: ` + guild.name);
     console.log(`Flame is now in ${client.guilds.cache.size} servers`);
 })
 
