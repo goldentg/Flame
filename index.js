@@ -17,16 +17,27 @@ const {
 } = require('./config.json');
 
 const activities_list = [
-    "Flame Development", 
+    "Flame Development",
     "-help for help",
     "https://github.com/goldentg/Flame",
     "Flame Development"
-    ]; 
+];
 
 
 
 client.once('ready', () => {
-    console.log(chalk.bgGreen("INFO:") + (` Bot has started with ${client.users.cache.size} users, in ${client.channels.cache.size} channels, of ${client.guilds.cache.size} guilds`));
+    const promises = [
+        client.shard.fetchClientValues('guilds.cache.size'),
+        client.shard.broadcastEval('this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)'),
+    ];
+
+    return Promise.all(promises)
+        .then(results => {
+            const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
+            const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
+            return console.log(chalk.green(`Server count: ${totalGuilds}, Member count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`));
+        })
+        .catch(console.error);
 });
 
 //log stats when bot is added to new server
@@ -45,7 +56,9 @@ client.on("guildDelete", guild => {
 client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
-        client.user.setActivity(activities_list[index], { type: 'WATCHING'}); // sets bot's activities to one of the phrases in the arraylist.
+        client.user.setActivity(activities_list[index], {
+            type: 'WATCHING'
+        }); // sets bot's activities to one of the phrases in the arraylist.
     }, 10000); // Runs this every 10 seconds.
 });
 
@@ -60,9 +73,9 @@ for (const file of commandFiles) {
 }
 
 client.on('message', message => {
-    
+
     if (!message.content.startsWith(prefix) || message.author.bot) return;
-    
+
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
 
