@@ -31,8 +31,8 @@ client.once('ready', () => {
 
 //log stats when bot is added to new server
 client.on("guildCreate", guild => {
-    console.log("Joined a new guild: " + guild.name);
-    console.log(`Flame is now in ${client.guilds.cache.size} servers`);
+    console.log(chalk.green('Joined a new guild: ' + guild.name));
+    console.log(chalk.green(`Flame is now in ${client.guilds.cache.size} servers`));
 })
 
 //log stats when bot is removed from a server
