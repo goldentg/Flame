@@ -29,8 +29,7 @@ const activities_list = [
 
 
 client.once('ready', () => {
-
-console.log(utcDate);
+    
     const promises = [
         client.shard.fetchClientValues('guilds.cache.size'),
         client.shard.broadcastEval('this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)'),
@@ -40,7 +39,7 @@ console.log(utcDate);
         .then(results => {
             const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
             const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
-            return console.log(chalk.green(`Server count: ${totalGuilds}, Member count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`));
+            return console.log(chalk.green(`${utcDate}\nServer count: ${totalGuilds}, Member count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`));
         })
         .catch(console.error);
 });
