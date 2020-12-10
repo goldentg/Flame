@@ -29,7 +29,7 @@ const activities_list = [
 
 
 client.once('ready', () => {
-    
+
     const promises = [
         client.shard.fetchClientValues('guilds.cache.size'),
         client.shard.broadcastEval('this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)'),
@@ -39,7 +39,7 @@ client.once('ready', () => {
         .then(results => {
             const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
             const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
-            return console.log(chalk.green(`${utcDate}\nServer count: ${totalGuilds}, Member count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`));
+            return console.log(chalk.green(`${utcDate}\nServer Count: ${totalGuilds}, Member Count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`));
         })
         .catch(console.error);
 });
@@ -52,8 +52,8 @@ client.on("guildCreate", guild => {
 
 //log stats when bot is removed from a server
 client.on("guildDelete", guild => {
-    console.log(`${utcDate}\nLeft a guild: ` + guild.name);
-    console.log(`Flame is now in ${client.guilds.cache.size} servers`);
+    console.log(chalk.red(`${utcDate}\nLeft a guild: ` + guild.name));
+    console.log(chalk.yellow(`Flame is now in ${client.guilds.cache.size} servers`));
 })
 
 //set bot presence 
