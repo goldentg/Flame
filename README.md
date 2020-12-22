@@ -7,10 +7,10 @@
   <br>
 </p>
 
-[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
+[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=2147483639&scope=bot)
 
 ### Add Flame To Your Server Using This Link: 
-https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot
+https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=2147483639&scope=bot
 
 ### - Notes -
 This bot is still in early development and frequent updates will be rolling out often. Check back in often to see what is new. Suggerstions for future implementations are appreciated and can be left in the discussions tab.
