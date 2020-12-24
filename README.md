@@ -35,12 +35,14 @@ After you have the required programs installed,  you can now download Flame. The
 
 **- Add Required Information -**
 Once you have downloaded the bot files, you must now create a file named `config.json` and add the following into that file: 
+
 ```
 {
     "token": "INSERT-TOKEN-HERE",
     "prefix": "-"
 }
 ```
+
 **- Running The Bot -**
 Once the previous steps have been completed you can now run the bot. 
 To do so you can either run the `run.bat` file, or run `node .` in a CMD.
@@ -48,7 +50,7 @@ To do so you can either run the `run.bat` file, or run `node .` in a CMD.
 
 
 ### - Discord - 
-If you wish to join my community yo can do so here
+If you wish to join my community you can do so here
 [Golden Codex HUB](https://discord.gg/GZ3xSkd)
 
 
