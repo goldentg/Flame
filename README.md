@@ -7,10 +7,10 @@
   <br>
 </p>
 
-[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot)
+[![Add Flame to your server here](https://img.shields.io/badge/Bot-Add%20Flame-brightgreen)](https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=2147483639&scope=bot)
 
 ### Add Flame To Your Server Using This Link: 
-https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=335015921&scope=bot
+https://discord.com/api/oauth2/authorize?client_id=783796609405812777&permissions=2147483639&scope=bot
 
 ### - Notes -
 This bot is still in early development and frequent updates will be rolling out often. Check back in often to see what is new. Suggerstions for future implementations are appreciated and can be left in the discussions tab.
@@ -35,12 +35,14 @@ After you have the required programs installed,  you can now download Flame. The
 
 **- Add Required Information -**
 Once you have downloaded the bot files, you must now create a file named `config.json` and add the following into that file: 
+
 ```
 {
     "token": "INSERT-TOKEN-HERE",
     "prefix": "-"
 }
 ```
+
 **- Running The Bot -**
 Once the previous steps have been completed you can now run the bot. 
 To do so you can either run the `run.bat` file, or run `node .` in a CMD.
@@ -48,7 +50,7 @@ To do so you can either run the `run.bat` file, or run `node .` in a CMD.
 
 
 ### - Discord - 
-If you wish to join my community yo can do so here
+If you wish to join my community you can do so here
 [Golden Codex HUB](https://discord.gg/GZ3xSkd)
 
 
