@@ -40,9 +40,13 @@ client.once('ready', () => {
         .then(results => {
             const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
             const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
-            return console.log(chalk.green(`${utcDate}\nServer Count: ${totalGuilds}, Member Count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`));
+            console.log(chalk.green(`${utcDate}\nServer Count: ${totalGuilds}, Member Count: ${totalMembers}, Channel Count: ${client.channels.cache.size}`))
+            client.guilds.cache.forEach(guild => {
+         console.log(chalk.yellow(`Guild Name: ${guild.name} | Guild ID: ${guild.id} | Guild Member Count: ${guild.memberCount}`));
+            })
         })
         .catch(console.error);
+        
 });
 
 //log stats when bot is added to new server
@@ -69,6 +73,7 @@ client.on('ready', () => {
             type: 'WATCHING'
         }); // sets bot's activities to one of the phrases in the arraylist.
     }, 10000); // Runs this every 10 seconds.
+    
 });
 
 //command handler framework
