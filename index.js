@@ -15,7 +15,8 @@ const fetch = require('node-fetch');
 
 const {
     token,
-    prefix
+    prefix,
+    ownerID
 } = require('./config.json');
 
 const activities_list = [
