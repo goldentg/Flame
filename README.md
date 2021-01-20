@@ -39,7 +39,8 @@ Once you have downloaded the bot files, you must now create a file named `config
 ```
 {
     "token": "INSERT-TOKEN-HERE",
-    "prefix": "-"
+    "prefix": "-",
+    "ownerID": "YOUR-USER-ID-HERE"
 }
 ```
 
